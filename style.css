@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 20px;
+  text-align: center;
+  color: cornflowerblue;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  background-color: cornflowerblue;
+  background-color: #222;
+
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.user-form input {
+  width: 100%;
+  display: block;
+  background-color: cornflowerblue;
+  color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  border: none;
+
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05);
+}
+
+.user-form input:focus {
+  outline: none;
+}
+
+.user-form input::placeholder {
+  color: rgb(83, 73, 73);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.card {
+  max-width: 800px;
+
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 3rem;
+  margin: 0 1.5rem;
+  border: 1px solid rgb(122, 111, 111);
+}
+.avatar {
+  border-radius: 50%;
+  border: 10px solid cornflowerblue;
+  height: 150px;
+  width: 150px;
+}
+
+.user-info {
+  color: #eee;
+  margin-left: 2rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.repo {
+  text-decoration: none;
+
+  color: #fff;
+  background-color: cornflowerblue;
+  font-size: 0.7rem;
+  padding: 0.35rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-form {
+    max-width: 400px;
+  }
+}
