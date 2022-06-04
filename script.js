@@ -20,6 +20,7 @@ async function getUser(username) {
     const { data } = await axios(APIURL + username);
 
     createUserCard(data);
+    console.log(data);
     getRepos(username);
   } catch (error) {
     if (error.response.status == 404) {

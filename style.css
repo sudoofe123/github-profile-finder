@@ -15,8 +15,7 @@ h1 {
 body {
   font-family: "Poppins", sans-serif;
 
-  background-color: cornflowerblue;
-  background-color: #222;
+  background-color: rgb(27, 26, 26);
 
   color: #fff;
   display: flex;
@@ -62,24 +61,12 @@ body {
 .card {
   max-width: 800px;
 
-  background: -webkit-linear-gradient(
-    to right,
-    #414345,
-    #232526
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #414345,
-    #232526
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   border-radius: 20px;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(0, 0, 0, 0.1);
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
   display: flex;
   padding: 3rem;
   margin: 0 1.5rem;
-  border: 1px solid rgb(122, 111, 111);
 }
 .avatar {
   border-radius: 50%;
@@ -114,6 +101,11 @@ body {
   font-size: 0.9rem;
   margin-left: 0.5rem;
 }
+#repos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 .repo {
   text-decoration: none;
@@ -128,12 +120,19 @@ body {
   border-radius: 5px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 868px) {
+  .user-form {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
   .card {
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
   }
   .user-form {
-    max-width: 400px;
+    width: 300px;
   }
 }
